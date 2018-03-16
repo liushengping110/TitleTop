@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/xrefreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/lin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/bule"
+                    />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="首页"
+                    android:textSize="50px"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:background="@color/bule"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+            <wizrole.titletop.view.CustScrollView
+                android:id="@+id/scrollView"
+                android:layout_below="@id/lin_top"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:focusableInTouchMode="true"
+                android:focusable="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="400px"
+                        android:src="@drawable/meinv_one"
+                        android:scaleType="centerCrop"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="300px"
+                        android:text="我是帅哥"
+                        android:gravity="center"
+                        android:textSize="60px"
+                        />
+                    <LinearLayout
+                        android:id="@+id/scroll_title_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/team_tab_detail" />
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                        <wizrole.titletop.view.CustListView
+                            android:id="@+id/list_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:divider="@null" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </wizrole.titletop.view.CustScrollView>
+
+            <LinearLayout
+                android:id="@+id/scroll_title_one"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_below="@id/lin_top"
+                android:orientation="vertical"/>
+
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="50px"
+    android:orientation="vertical"
+    android:layout_marginLeft="50px"
+    tools:context="wizrole.titletop.activity.MainActivity">
+
+    <Button
+        android:id="@+id/scrollView_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity中的ScrollView标题置顶"
+        android:layout_marginTop="50px"
+        />
+
+    <Button
+        android:id="@+id/tablayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScrollView标题置顶"
+        android:layout_marginTop="50px"
+        />
+    <Button
+        android:id="@+id/ordinary_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="普通Material  Design的标题置顶"
+        android:layout_marginTop="50px"
+        />
+
+</LinearLayout>
